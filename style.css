@@ -6,5 +6,13 @@
     border: 1px solid black;  
 }
 .tabla tr td{
-    border: 1px solid black;  
+    border: 1px solid black;
+    padding: 2px 0px 2px 12px;  
+}
+.titulo{
+    text-align: center;
+    background-color: rgb(202, 89, 89);
+}
+.cabecera{
+    text-align: center;
 }
