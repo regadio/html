@@ -4,10 +4,12 @@
 }
 .tabla{
     border: 1px solid black;  
+    border-collapse: collapse;
 }
 .tabla tr td{
     border: 1px solid black;
-    padding: 2px 0px 2px 12px;  
+    padding: 3px 2px 3px 2px;  
+    text-align: center;
 }
 .titulo{
     text-align: center;
