@@ -1,3 +1,4 @@
+<!-- Ejercicio de etiquetas HTML Rodrigo Regadío Núñez -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,13 +15,14 @@
     <p><b>Definición:</b> Las etiquetas HTML son fragmentos de texto rodeados por corchetes angulares
         <code>&lt; &gt;</code>, que tienen funciones y usos específicos y se utilizan para escribir código HTML.
     </p>
-    <p>En la siguiente tabla se enlista todas las etiquetas disponibles en HTML.</p>
+    <p>En la siguiente tabla estan todas las etiquetas disponibles en HTML.</p>
 
     <table class="tabla">
         <tr class="cabecera">
             <td>Etiqueta</td>
             <td>Descripción</td>
             <td>Atributos principales</td>
+            <td>Ejemplos</td>
         </tr>
         <tr>
             <td>!DOCTYPE</a></td>
@@ -38,7 +40,7 @@
             <td></td>
         </tr>
         <tr class="titulo">
-            <td colspan="3">Metadatos </td>
+            <td colspan="4">Metadatos </td>
         </tr>
         <tr class="cabecera">
             <td>Etiqueta</td>
@@ -54,6 +56,9 @@
             <td>title</a></td>
             <td>título del documento (se muestra en la pestaña del navegador)</td>
             <td></td>
+            <td>
+                <title>Titulo</title>
+            </td>
         </tr>
         <tr>
             <td>base</a></td>
@@ -64,6 +69,10 @@
             <td>link</a></td>
             <td>enlace a otros archivos (hoja de estilo, etc.)</td>
             <td>href, rel, media, type, title</td>
+            <td>
+                <link rel="stylesheet" href="style.css">
+                <!--enlace a hoja de stilos -->
+            </td>
         </tr>
         <tr>
             <td>meta</a></td>
@@ -74,9 +83,12 @@
             <td>style</a></td>
             <td>hoja de estilo incluida en el documento</td>
             <td>type, title</td>
+            <td>
+                <style></style>
+            </td>
         </tr>
         <tr class="titulo">
-            <td colspan="3">Secciones</td>
+            <td colspan="4">Secciones</td>
         </tr>
         <tr class="cabecera">
             <td>Etiqueta</td>
@@ -92,6 +104,12 @@
             <td>article</a></td>
             <td>artículo</td>
             <td></td>
+            <td>
+                <article>
+                    <h4>Ejemplo</h4>
+                    <p>Ejemplo.</p>
+                </article>
+            </td>
         </tr>
         <tr>
             <td>section</a></td>
@@ -102,16 +120,32 @@
             <td>nav</a></td>
             <td>navegación</td>
             <td></td>
+            <td>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Ejemplo1</a></li>
+                        <li><a href="#">Ejemplo2</a></li>
+                        <li><a href="#">Ejemplo3</a></li>
+                    </ul>
+                </nav>
+            </td>
         </tr>
         <tr>
             <td>aside</a></td>
             <td>lateral</td>
             <td></td>
+            <td>
+                <aside>Barra lateral</aside>
+            </td>
         </tr>
         <tr>
             <td>h1 a h6</a></td>
             <td>encabezado (de nivel 1 a 6)</td>
             <td></td>
+            <td>
+                <h1>Ejemplo h1</h1>
+                <h5>Ejemplo h5</h5>
+            </td>
         </tr>
         <tr>
             <td>hgroup</td>
@@ -122,19 +156,31 @@
             <td>header</a></td>
             <td>cabecera</td>
             <td></td>
+            <td>
+                <header>Ejemplo</header>
+            </td>
         </tr>
         <tr>
             <td>footer</a></td>
             <td>pie</td>
             <td></td>
+            <td>
+                <footer>Ejemplo</footer>
+            </td>
         </tr>
         <tr>
             <td>address</a></td>
             <td>dirección (información sobre el autor)</td>
             <td></td>
+            <td>
+                <address>
+                    Nombre</a>.<br>
+                    Apellido<br>
+                    email<br></address>
+            </td>
         </tr>
         <tr class="titulo">
-            <td colspan="3">Bloques de contenido</td>
+            <td colspan="4">Bloques de contenido</td>
         </tr>
         <tr class="cabecera">
             <td>Etiqueta</td>
@@ -145,26 +191,44 @@
             <td>p</a></td>
             <td>párrafo</td>
             <td></td>
+            <td>
+                <p>Ejemplo</p>
+            </td>
         </tr>
         <tr>
             <td>hr</a></td>
             <td>separador</td>
             <td></td>
+            <td>ejemplo
+                <hr>ejemplo
+            </td>
         </tr>
         <tr>
             <td>div</a></td>
             <td>división</td>
             <td></td>
+            <td>
+                <div>contenido div</div>
+            </td>
         </tr>
         <tr>
             <td>blockquote</a></td>
             <td>cita larga (que incluye varios párrafos)</td>
             <td>cite</td>
+            <td>
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus egestas orci. Mauris
+                    pellentesque dapibus ultrices. Maecenas sed eleifend mi. Phasellus et est lacinia,</blockquote>
+            </td>
         </tr>
         <tr>
             <td>pre</a></td>
             <td>texto preformateado</td>
             <td></td>
+            <td>
+                <pre>ejemplo   ejemplo
+                        ejemplo
+                </pre>
+            </td>
         </tr>
         <tr>
             <td>main</a></td>
@@ -182,7 +246,7 @@
             <td></td>
         </tr>
         <tr class="titulo">
-            <td colspan="3">Texto (en línea)</td>
+            <td colspan="4">Texto (en línea)</td>
         </tr>
         <tr class="cabecera">
             <td>Etiqueta</td>
@@ -193,6 +257,7 @@
             <td>br</a></td>
             <td>salto de línea</td>
             <td></td>
+            <td>hola<br>hola</td>
         </tr>
         <tr>
             <td>wbr</a></td>
@@ -203,46 +268,57 @@
             <td>a</a></td>
             <td>hiperenlace</td>
             <td>href, target, download, rel, type</td>
+            <td><a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Enlace</a></td>
         </tr>
         <tr>
             <td>span</a></td>
             <td>contenedor de texto genérico</td>
             <td></td>
+            <td>
+                <p>Ejemplo<span style="color:blue;font-weight:bold"> azul</span> ejemplo
+            </td>
         </tr>
         <tr>
             <td>strong</a></td>
             <td>importante</td>
             <td></td>
+            <td><strong>Importante</strong></td>
         </tr>
         <tr>
             <td>em</a></td>
             <td>énfasis</td>
             <td></td>
+            <td><p> <em>Ejemplo</em></p></td>
         </tr>
         <tr>
             <td>sub</a></td>
             <td>subíndice</td>
             <td></td>
+            <td><p>Ejemplo<sub>Ejemplo</sub></p></td>
         </tr>
         <tr>
             <td>sup</a></td>
             <td>superíndice</td>
             <td></td>
+            <td><p>Ejemplo<sup>Ejemplo</sup></td>
         </tr>
         <tr>
             <td>abbr</a></td>
             <td>abreviatura</td>
             <td>title</td>
+            <td></td>
         </tr>
         <tr>
             <td>b</a></td>
             <td>atención</td>
             <td></td>
+            <td><b>Ejemplo</b></td>
         </tr>
         <tr>
             <td>cite</a></td>
             <td>obra</td>
             <td></td>
+            <td><cite>Ejemplo</cite></td>
         </tr>
         <tr>
             <td>data</a></td>
@@ -253,6 +329,7 @@
             <td>dfn</a></td>
             <td>definición</td>
             <td>title</td>
+            <td><dfn>Ejemplo</dfn></td>
         </tr>
         <tr>
             <td>kbd</a></td>
@@ -263,6 +340,7 @@
             <td>i</a></td>
             <td>tecnicismo</td>
             <td></td>
+            <td><i>Ejemplo</i></td>
         </tr>
         <tr>
             <td>mark</a></td>
@@ -273,16 +351,19 @@
             <td>q</a></td>
             <td>cita </td>
             <td>cite</td>
+            <td><q>Ejemplo</q></td>
         </tr>
         <tr>
             <td>s</a></td>
             <td>incorrecto</td>
             <td></td>
+            <td><s>Ejemplo</s></td>
         </tr>
         <tr>
             <td>small</a></td>
             <td>comentario</td>
             <td></td>
+            <td><small>Ejemplo</small></td>
         </tr>
         <tr>
             <td>time</a></td>
@@ -293,26 +374,31 @@
             <td>u</a></td>
             <td>sonido inarticulado</td>
             <td></td>
+            <td><u>Ejemplo</u></td>
         </tr>
         <tr>
             <td>code</a></td>
             <td>código (de programa de ordenador)</td>
             <td></td>
+            <td><code>Ejemplo</code></td>
         </tr>
         <tr>
             <td>samp</a></td>
             <td>salida (de programa de ordenador)</td>
             <td></td>
+            <td><samp>Ejemplo</samp></td>
         </tr>
         <tr>
             <td>var</a></td>
             <td>variable (de programa de ordenador)</td>
             <td></td>
+            <td><var>Ejemplo</var></td>
         </tr>
         <tr>
             <td>bdo</a></td>
             <td>dirección de escritura</td>
             <td>dir</td>
+            <td><bdo dir=""></bdo></td>
         </tr>
         <tr>
             <td>bdi</a></td>
@@ -321,7 +407,7 @@
         </tr>
 
         <tr class="titulo">
-            <td colspan="3">Modificaciones</td>
+            <td colspan="4">Modificaciones</td>
         </tr>
         <tr class="cabecera">
             <td>Etiqueta</td>
@@ -332,15 +418,17 @@
             <td>ins</a></td>
             <td>texto insertado</td>
             <td>cite, datetime</td>
+            <td><ins>Ejemplo</ins></td>
         </tr>
         <tr>
             <td>del</a></td>
             <td>texto borrado</td>
             <td>cite, datetime</td>
+            <td><del>Ejemplo</del></td>
         </tr>
 
         <tr class="titulo">
-            <td colspan="3">Contenido incrustado</td>
+            <td colspan="4">Contenido incrustado</td>
         </tr>
         <tr class="cabecera">
             <td>Etiqueta</td>
@@ -356,6 +444,8 @@
             <td>img</a></td>
             <td>imagen</td>
             <td>alt, src, usemap, ismap, width, height</td>
+            <td> <img src="https://www.aboutespanol.com/thmb/3NOHAJ0UilEoUV1f3a26uexlvZQ=/2121x1414/filters:fill(auto,1)/Blackdots-30311d1a217c47429365753a852f6714.jpg" alt="imagen" width="50px" height="50px">
+            </td>
         </tr>
         <tr>
             <td>frame</a></td>
@@ -382,11 +472,13 @@
             <td></td>
             <td>src, poster, preload, autoplay, loop, muted, controls, width, height
             </td>
+            <td><video src="Link a un video">video</video></td>
         </tr>
         <tr>
             <td>audio</td>
             <td></td>
             <td>src, preload, autoplay, loop, muted, controls</td>
+            <td><audio src="Link a un audio"></audio></td>
         </tr>
         <tr>
             <td>source</td>
@@ -402,6 +494,15 @@
             <td>map</td>
             <td>mapa de imagen</td>
             <td>name</td>
+            <td>
+                <img src="https://www.w3schools.com/tags/workplace.jpg" alt="Workplace" usemap="#mapa" width="400" height="379">
+
+                <map name="mapa">
+                <area shape="rect" coords="34,44,270,350" alt="Computer" href="">
+                <area shape="rect" coords="290,172,333,250" alt="Phone" href="">
+                <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="">
+                </map>
+            </td>
         </tr>
         <tr>
             <td>area</td>
@@ -409,7 +510,7 @@
             <td>alt, coords, href, hreflang, rel, shape, target, type</td>
         </tr>
         <tr class="titulo">
-            <td colspan="3">Listas (bloque de contenido)</td>
+            <td colspan="4">Listas (bloque de contenido)</td>
         </tr>
         <tr class="cabecera">
             <td>Etiqueta</td>
@@ -420,11 +521,20 @@
             <td>ol</a></td>
             <td>lista ordenada</td>
             <td>reversed, start, type</td>
+            <td><ol>
+                <li><a href="#">Ejemplo</a></li>
+                </ol>
+            </td>
         </tr>
         <tr>
             <td>ul</a></td>
             <td>lista no ordenada</td>
             <td></td>
+            <td>
+                <ul>
+                    <li><a href="#">Ejemplo</a></li>
+                </ul>
+            </td>
         </tr>
         <tr>
             <td>menu</td>
@@ -435,6 +545,14 @@
             <td>li</a></td>
             <td>elemento de lista (ordenada o no ordenada)</td>
             <td>value</td>
+            <td>
+                <ol>
+                    <li><a href="#">Ejemplo</a></li>
+                </ol>
+                <ul>
+                    <li><a href="#">Ejemplo</a></li>
+                </ul>
+            </td>
         </tr>
         <tr>
             <td>dl</a></td>
@@ -452,7 +570,7 @@
             <td></td>
         </tr>
         <tr class="titulo">
-            <td colspan="3">Tablas</td>
+            <td colspan="4">Tablas</td>
         </tr>
         <tr class="cabecera">
             <td>Etiqueta</td>
@@ -510,7 +628,7 @@
             <td>span</td>
         </tr>
         <tr class="titulo">
-            <td colspan="3">Formularios</td>
+            <td colspan="4">Formularios</td>
         </tr>
         <tr class="cabecera">
             <td>Etiqueta</td>
@@ -592,7 +710,7 @@
             <td></td>
         </tr>
         <tr class="titulo">
-            <td colspan="3">Elementos interactivos</td>
+            <td colspan="4">Elementos interactivos</td>
         </tr>
         <tr class="cabecera">
             <td>Etiqueta</td>
@@ -615,7 +733,7 @@
             <td>open</td>
         </tr>
         <tr class="titulo">
-            <td colspan="3">Scripts</td>
+            <td colspan="4">Scripts</td>
         </tr>
         <tr class="cabecera">
             <td>Etiqueta</td>
@@ -648,7 +766,7 @@
             <td>width, height</td>
         </tr>
         <tr class="titulo">
-            <td colspan="3">Notación Ruby (texto en línea)</td>
+            <td colspan="4">Notación Ruby (texto en línea)</td>
         </tr>
         <tr class="cabecera">
             <td>Etiqueta</td>
