@@ -1,9 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+/* PROPIEDADES DE TEXTO Y FUENTE */
 body{
     font-family: Arial,Verdana,sans-serif;
+    line-height: 20pt;
 }
 h1,h2{
     font-family: Georgia,Times,serif;
@@ -11,7 +9,97 @@ h1,h2{
 }
 h1{
     font-size: 32px;
+    text-align: center;
+    color: gray;
+    text-decoration: underline gray dotted;
+    text-shadow: 2px 2px gainsboro;
 }
 h2{
     font-size: 24px;
 }
+h2::first-letter{
+    text-transform: uppercase;
+}
+.pri{
+    font-weight: bold;
+}
+.segu{
+    font-style: italic;
+    text-decoration: underline solid black;
+}
+
+/* INICIO SELECTORES BÁSICOS */
+
+p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+}
+.uno{
+    color: #369;
+}
+.uno a{
+    color: red;
+}
+.dos{
+    
+}
+.dos a{
+    color: blue;
+}
+.enfasis{
+   color: #0000BB; 
+   background-color:#FFFFCC;
+}
+.enfasis2{
+    color: #FFFF00; 
+   background-color:#000000;
+}
+.dos span{
+    font-weight: bold;
+}
+/* FIN SELECTORES BÁSICOS */
+
+
+/* INICIO Herencia */
+
+.herencia{
+    text-align: center;
+}
+.rojo{
+    color: red;
+}
+.rojo a{
+    color: inherit;
+}
+.verde{
+    color: green;
+}
+.verde a{
+    color: inherit;
+}
+.amarillo{
+    color: yellow;
+}
+.amarillo a{
+    color: inherit;
+}
+.naranja{
+    color: orange;
+}
+.naranja a{
+    color: inherit;
+}
+/* FIN HERENCIA */
+/* INICIO HERENCIA 2 */
+.herencia2 p{
+    text-align: center;
+    color: blue;
+}
+h3{
+    text-align: center;
+}
+.herencia2 .defecto{
+    color: #000000;
+}
+
