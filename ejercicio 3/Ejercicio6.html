@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: hotpink;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        .uno p {
+            display: none;
+            background-color: rgb(9, 255, 0);
+            padding: 20px;
+        }
+
+        .uno:hover p {
+            display: block;
+        }
+
+        .dos {
+            background-color: green;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .dos:hover {
+            background-color: blue;
+        }
+
+        ::selection {
+            color: red;
+            background: yellow;
+        }
+
+        input:focus {
+            background-color: yellow;
+        }
+
+        p:nth-last-of-type(2) {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Selecciona cualquier cosa:</h1>
+    <p><b><a href="" target="">Ejemplo</a></b></p>
+
+    <div class="uno">
+        Pasa por aqui
+        <p>Ejemplo</p>
+    </div>
+    <br>
+
+    <div class="dos">
+        Pasa por encima
+    </div>
+    <br>
+    <form>
+        Ejemplo <input type="text" name="">
+    </form>
+    <p>Primero</p>
+    <p>Segundo</p>
+    <p>Tercero</p>
+    <p>Cuarto</p>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <style>
+       /*div p {background-color:pink;}  
+       Se pone en los párrafos (p) contenidos en los div: 1,2,3,4,7,8,9 y 10*/
+       /*div > p {background-color:pink;} 
+       Esta en los párrafos (p) que son hijos directos del elemento div: 1,2,4,7,8,9 y 10*/
+       /*div + p {background-color:pink;} 
+       Esta en los párrafos (p) que van justo inmediatamente después del cierre de un div: 5, 10 y 11*/
+       /*div ~ p {background-color:pink;} 
+       Esta en los párrafos (p) que van en cualquier lugar después del cierre de un div: 5,6,10 y 11*/
+    </style>
+</head>
+<body>
+    <p>Párrafo 0</p>
+    <div>
+        <p>Párrafo 1</p>
+        <p>Párrafo 2</p>
+        <section><p>Párrafo 3</p></section>
+        <p>Párrafo 4</p>
+    </div>
+    <p>Párrafo 5</p>
+    <p>Párrafo 6</p>
+    <div>
+        <p>Párrafo 7</p>
+        <div>
+            <p>Párrafo 8</p>
+            <p>Párrafo 9</p>
+        </div>
+        <p>Párrafo 10</p>
+    </div>
+    <p>Párrafo 11</p>
+</body>
+</html>
