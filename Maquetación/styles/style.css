@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding:2px 15% 0px 15% ;
+}
+#total{
+    background-color: black;
+}
+/* HEADER */
+#header{
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    height: 120px;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+
+}
+.nav-total{
+    display: flex;
+
+}
+.nav-total li{
+    list-style: none;
+
+}
+.nav-total li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 20px; 
+    font-weight: bold;
+}
+.nav-total li a:hover{
+    background-color: rgb(4, 255, 4);
+    color: black;
+}
+/* FIN HEADER */
+/* CARRUSEL */
+.carrusel{
+    width: 100%;
+}
+.carrusel img{
+    width: 100%;
+}
+/* FIN carrusel */
+/* TARJETAS */
+.total-tarjeta{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: black;
+}
+.tarjeta {
+    margin-top: 40px;
+    background-color: rgb(0, 0, 0);
+    width: 250px;
+    height: 300px;
+}
+.tarjeta h4{
+    color: aliceblue;
+}
+.tarjeta p{
+    color: aliceblue;
+    font-size: 13px;
+}
+.tarjeta img{
+    width: 100%;
+}
+/* FIN TARJETAS */

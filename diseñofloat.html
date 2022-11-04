@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISEÑO FLOAT</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: grey;
+            padding: 50px;
+            text-align: center;
+            text-shadow: 1px 1px black;
+            color: white;
+            margin-bottom: 20px;
+        }
+        nav{
+            float: left;
+            width: 20%;
+            margin-bottom: 20px;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            background-color: aquamarine;
+            padding: 15px;
+            margin: 5px;
+            color: black;
+            text-align: center;
+        }
+        .contenido{
+            float: right;
+            width: 80%;
+        }
+        footer{
+            clear: both;
+            background-color: grey;
+            padding: 50px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MI SITIO WEB</h1>
+    </header>
+    <nav>
+        <a href="#">Enlace</a>
+        <a href="#">Enlace</a>
+        <a href="#">Enlace</a>
+        <a href="#">Enlace</a>
+        <a href="#">Enlace</a>
+    </nav>
+    <div class="contenido">
+        <h2>Título</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt odio pariatur cumque, doloribus unde sunt, ducimus rem architecto facere debitis, nulla aut aperiam! Dolore explicabo, odit earum beatae autem labore?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur doloremque quia hic, veritatis sit deserunt quas maxime deleniti enim omnis perspiciatis, accusamus iste in repellat a? Aliquid, eum maxime.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure deserunt, commodi eaque doloribus, vero rem odio sunt beatae perspiciatis pariatur adipisci est, sequi et suscipit tenetur quisquam voluptatibus dolor ratione.</p>
+    </div>
+    <footer>
+        <h3>Pie de página</h3>
+    </footer>
+</body>
+</html>

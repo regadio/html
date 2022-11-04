@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html long="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compilable" content="IE=edge">
+    <meta name="viewport" content="width-device-width" initial-scale="1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="estilo.css" type="text/css" media="screen">
+    <style>
+        /*Comentario*/
+        /*SELECTORES: universal, etiqueta o elemento, encadenado, descendente*/
+        /*        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h1,
+        p {
+            color: bisque;
+            font-size: 30 pt;
+        }
+
+        div a {
+            text-decoration: none;
+        }
+
+        div p {
+            color: antiquewhite
+        }
+
+        /*Selectores de Identificadores, selectores de clases*/
+        /*        #rojo {
+            color: red;
+        }
+
+        .centrado {
+            text-align: center;
+        }
+
+        .verde {
+            color: green;
+        }
+
+        .rojo {
+            color: red;
+        }
+
+        h1 {
+            color: rgb(0, 0, 255);
+            /*Se puede poner con nombre, rgb o hexadeciaml*/
+        /*text-decoration ; text-decoration-line text-decoration-color text-decoration-style text-decoration-thickness*/
+        /*            text-decoration: underline red dotted;
+            text-transform: lowercase;
+            text-shadow: 4px 4px blue;
+        }
+
+        p {
+            text-indent: 10px;
+            /*Porentaje, píxeles o puntos*/
+        /*            text-align: center;
+            line-height: 25px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+*/
+        /*text-transform: uppercase, lowercase*/
+        /*div {
+            font-family: "Courier New", Courier, monospace;
+            color: red;
+            font-size: 20px;
+            border: 1px solid black;
+            margin: 20px;
+            /*borde hacia fuera
+            padding: 20px;
+            /*borde hacia dentro
+        }*/
+
+        a {
+            color: initial;
+            border: inherit;
+        }
+
+        div,
+        p {
+            border: initial;
+        }
+
+        /*INITIAL (mantiene el valor por defecto), INHERIT (fuerza el valor de la propiedad que tiene el padre)*/
+
+
+        h1 {
+            /*border, border-width, border-style, border-color*/
+            /*border-top-width, border-bottom-style, border-left-color, border-right*/
+            border-top: 1px red dotted;
+            border-bottom: blue dotted 1px;
+            border-right: green dotted 1px;
+            border-left: pink dotted 1px;
+
+            /*PADDING*/
+            padding-left: 20px;
+            padding-top: 30px;
+            padding-bottom: 10px;
+            padding-right: 24px;
+            /*padding: top, right, bottom, left*/
+            /*padding: top-botton, right-left*/
+            /*padding: top, right-left, bottom*/
+            /*padding: todos*/
+
+            /*MARGIN*/
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 30px;
+            margin-right: 30px;
+            /*margin: 20px 30px*/
+
+        }
+
+        /*p,
+        a {
+            border: 2px black solid;
+        }*/
+
+        #a {
+            width: 700px;
+            height: 200px;
+            border: 5px solid black;
+            padding: 20px;
+            margin: 20px;
+            box-sizing: border-box;
+            /*En el contenedor unifica el border mas el padding*/
+        }
+
+        #b {
+            width: 50%;
+            height: 200px;
+            background-color: bisque;
+        }
+
+        #c {
+            width: 50%;
+            height: 100px;
+            background-color: blueviolet;
+        }
+
+        /*COMBINADORES DESCENDENTES*/
+        /*div p{
+            background-color: aqua;
+        }*/
+
+        /*COMBINADOR SECUNDARIO, DE HIJOS DIRECTOS (>)*/
+        /*div>p{
+            background-color: blue;
+        }*/
+
+        /*COMBINADOR MISMO NIVEL ADYACENTE, HERMANO ADYACENTE (+) selecciona el primer hermano posterior*/
+        div+p {
+            background-color: red;
+        }
+
+        /*COMBINADOR GENERAL DE HERMANOS ~ selecciona todos los hermanos*/
+        div~p {
+            background-color: cadetblue;
+        }
+
+        li+li {
+            background-color: chocolate;
+        }
+
+        /*PSEUDOCLASES EN LOS ENLACES*/
+        /*:*/
+        /*a:link hover active visited*/
+        .cambiar:link {
+            color: green;
+        }
+
+        .cambiar:hover {
+            color: red;
+            font-size: 20px;
+        }
+
+        .cambiar:active {
+            color: blueviolet;
+        }
+
+        .cambiar:visited {
+            color: fuchsia;
+        }
+
+        #hola p {
+            display: none;
+        }
+
+        #hola:hover p {
+            display: block;
+        }
+
+        #hola+p {
+            display: none;
+        }
+
+        #hola:hover+p {
+            display: block;
+        }
+
+        /*PSEUDOELEMENTOS elemento::pseudoelemento*/
+        /*::after ::before ::first-letter ::first-line ::marker ::selection*/
+        #cosa1::first-letter {
+            font-size: 30px;
+            color: red;
+        }
+
+        #cosa2::first-line {
+            font-size: 20px;
+        }
+
+        /*El enlace es un elemento en linea y first-letter y first-line solo se utilizan en elmentos en bloque*/
+
+        #lista li::marker {
+            font-size: 30px;
+            color: aqua;
+        }
+
+        /*ELEMENTOS OVERFLOW*/
+        /*Overflow: visible, hidden, scroll, auto*/
+        /*Se puede aplicar sobre elementos en bloque y a los que se le da una altura */
+        /*Valor por defecto de overflow es visible*/
+        .caja {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin-bottom: 300px;
+        }
+
+        .visible {
+            overflow: visible;
+        }
+
+        .escondido {
+            overflow: hidden;
+        }
+
+        .desplazamiento {
+            overflow: scroll;
+        }
+
+        .auto {
+            overflow: auto;
+        }
+
+
+        /*DISPLAY: inline, block, inline-block, none*/
+        /*Elementos en bloque: p, div, h1, section, header, footer, ul, li, ol,...*/
+        /*Elementos en línea: span, img, a*/
+
+        .enlaces {
+            display: block;
+        }
+
+        .listas {
+            display: inline;
+        }
+
+        .linea {
+            display: inline;
+            width: 100px;
+            height: 100px;
+            border: 1px black solid;
+        }
+
+        .lineaBloque {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 1px black solid;
+        }
+
+
+        .cajaOculta {
+            height: 100PX;
+            width: 100px;
+        }
+
+
+
+        .ElementoOculto {
+            visibility: hidden;
+        }
+
+        .cajaOculta:hover+.ElementoOculto {
+            visibility: initial;
+        }
+
+        /*LIST STYLE TYPE*/
+        .listitau {
+            list-style-image: url(corazon.png);
+        }
+
+        .listitao {
+            list-style-type: decimal-leading-zero;
+        }
+
+        /*menú vertical*/
+        /*1.- Quitamos los valores por defecto de la lista*/
+        .menuvertical {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            width: 20%;
+        }
+
+        .menu {
+            background-color: white;
+        }
+
+        .menu a {
+            display: block;
+            color: initial;
+            text-decoration: none;
+            padding: 20px 0;
+            background-color: grey;
+        }
+
+        .menu a:hover {
+            background-color: black;
+            color: white;
+            border-bottom: 1px solid gainsboro;
+        }
+
+        .inicio {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /*FLOAT*/
+        /*left, right, none*/
+        /*CLEAR: limpia el flotamiento left right, both*/
+        .imagenfloat1 {
+            float: left;
+        }
+        div .imagenfloat1 {
+            float: right;
+        }
+
+        .caja1, .caja2, .caja3{
+            width: 200px;
+            height: 200px;
+            border: 2px solid pink;
+            float: left;
+        }
+        *{
+            box-sizing: border-box /*ancho total de un elemento=contenido real+padding+border*/;
+        }
+    </style>
+</head>
+<!--Siempre prevalece el último estilo que lea-->
+
+<body>
+    <!--Comentario-->
+
+    <!--    <h2 class="centrado verde rojo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quaerat sunt sit. Exercitationem dolorem,
+        obcaecati cupiditate ab mollitia dolore sequi reiciendis dolores vero. Necessitatibus cupiditate, similique
+        excepturi eveniet exercitationem accusantium!
+    </h2>
+
+    <div id="rojo" class="centrado">
+        Cabecera
+    </div>
+    <h1 id="rojo">Hola</h1>
+-->
+    <!--Padre-->
+    <!--    <div>--->
+    <!--Hijo-->
+    <!--        <a href="#">Hola</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus enim ratione soluta nemo vero odit
+            recusandae similique neque dolores reiciendis non, eligendi perferendis esse atque exercitationem laudantium
+            assumenda ab incidunt.</p>
+    </div>
+
+    <a href="#">Hola</a>
+    <h1 style="color:blueviolet">Hola</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quos, in consectetur, iusto iure rerum perferendis,
+        qui odit sequi nihil unde rem nam ut mollitia animi labore eos vel officia!</p>--->
+    < <!--PROPIEDADES DEL TEXTO-->
+
+        <!--HERENCIA-->
+        <h1>HERENCIA</h1>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit sint assumenda unde, blanditiis
+                cumque excepturi vel fuga iure, commodi ipsa molestias nostrum, natus aliquam sunt debitis dolore
+                possimus
+                recusandae doloribus.</p>
+            <a href="#">Enlace</a>
+            <ul>
+                <li>Item1</li>
+                <li>Item2</li>
+            </ul>
+        </div>
+</body>
+
+</html>
+
+<!--CAJAS-->
+<h1>MODELO DE CAJAS</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi quos a numquam. Fuga ullam eum adipisci nulla
+    veniam ex aut laudantium rerum incidunt sed. Quis impedit quod vitae ut maiores?</p>
+<a href="#">Enlace</a>
+<div id="a">HOLA</div>
+<div id="b">
+    <div id="c"></div>
+</div>
+
+<!---COMBINADORES-->
+<h1>COMBINADORES</h1>
+<p>parrafo 1</p>
+<p>parrafo 2</p>
+<div>
+    <p>parrafo3</p>
+
+    <div>parrafo 4
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>
+                <p>parrafo 5</p>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <p>parrafo 6</p>
+</div>
+
+<p>parrafo 7</p>
+<p>parrafo 8</p>
+
+
+<!---PSEUDOCLASES-->
+<h1>PSEUDOCLASES</h1>
+<a href="#" class="cambiar">ENLACE</a>
+<a href="#">ENLACE2</a>
+<div id="hola">
+    Pasa el ratón por encima
+    <p>Hola</p>
+</div>
+<p>Hola2 </p>
+
+<!---PSEUDOELEMENTOS-->
+<h1>PSEUDOELEMENTOS</h1>
+
+<p id="cosa1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, debitis explicabo velit doloribus earum
+    saepe veritatis voluptates molestias laudantium, animi necessitatibus eos voluptate tenetur soluta eius a
+    consectetur asperiores est!</p>
+<p id="cosa2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et delectus labore possimus ea ratione.
+    Commodi animi at asperiores sequi ex temporibus ipsa! Distinctio voluptatibus voluptates maxime atque quas eaque.
+</p>
+<a href="#" id="enlace">Enlace</a>
+<ul id="lista">
+    <li>item1</li>
+    <li>item2</li>
+
+</ul>
+
+<!--OVERFLOW-->
+<h1>OVERFLOW</h1>
+<h2>Visible</h2>
+<div class="visible caja">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quidem eligendi laboriosam blanditiis quisquam
+    atque ullam, illum molestias modi vitae ratione. Molestias beatae, repellendus nihil cupiditate hic quibusdam
+    ducimus maxime.
+</div>
+<h2>Hidden</h2>
+<div class="escondido caja">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa natus explicabo nesciunt praesentium itaque. Tenetur
+    incidunt itaque sint commodi atque harum maiores obcaecati. Dolorum odio ab optio eum dicta accusantium.
+</div>
+<h2>Scroll</h2>
+<div class="desplazamiento caja">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellat omnis, architecto repellendus pariatur
+    ipsam, voluptatibus molestiae dicta cumque deleniti excepturi? Molestiae quod, expedita vero assumenda dolor
+    recusandae fugit distinctio.
+</div>
+<h2>Auto</h2>
+<div class="auto caja">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure optio sequi, esse, quaerat dicta beatae natus pariatur
+    rerum accusantium doloremque et molestias voluptatum? Consectetur aspernatur nobis nam, id minima dignissimos!
+</div>
+
+<!--DISPLAY-->
+<h1>DISPLAY</h1>
+<!--Elementos en línea visualizados como elementos de bloque -->
+<a href="#" class="enlaces">Enlace</a>
+<a href="#" class="enlaces">Enlace</a>
+<a href="#" class="enlaces">Enlace</a>
+
+
+<!--ELEMENTOS EN BLOQUE VISUALIZADOS COMO ELEMENTOS EN LÍNEA-->
+<p class="linea">Hola</p>
+<p class="lineaBloque">Hola</p>
+
+<ol>
+    <li class="listas">Lista</li>
+    <li class="listas">Lista</li>
+    <li class="listas">Lista</li>
+</ol>
+
+<div class="cajaOculta"></div>
+<p class="ElementoOculto">Hola</p>
+
+<!--LIST STYLE - TYPE-->
+<h1>LIST STYLE-TYPE</h1>
+<ul class="listitau">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+<ol class="listitao">
+    <li>1</li>
+    <li>2</li>
+</ol>
+
+<!--MENÚ VERTICAL-->
+<h1>MENÚ VERTICAL</h1>
+<ul class="menuvertical">
+    <li class="menu inicio"><a href="">Inicio</a></li>
+    <li class="menu"><a href="">Servicios</a></li>
+    <li class="menu"><a href="">Productos</a></li>
+    <li class="menu"><a href="">Contacto</a></li>
+</ul>
+
+<!--FLOAT-->
+<p class="float1"><img src="imagen.png" alt="Imagen" class="imagenfloat1" width="100px" height="100px">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident sed, modi rem cum pariatur, deleniti vitae
+    suscipit minima non libero, fuga itaque iste facere mollitia ad debitis hic voluptatem repellat! Lorem ipsum dolor
+    sit amet consectetur adipisicing elit. Distinctio, placeat repellendus esse error velit eum deserunt quibusdam a
+    perspiciatis, ipsam qui voluptas reprehenderit. Corrupti non reiciendis, temporibus molestias explicabo excepturi!
+</p>
+<div class="caja1">hola</div><div class="caja2">hola</div><div class="caja3">hola</div>
+
+<div style="clear: left ;">
+    <p class="float1"><img src="imagen.png" alt="Imagen" class="imagenfloat1" width="100px" height="100px">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident sed, modi rem cum pariatur, deleniti vitae
+        suscipit minima non libero, fuga itaque iste facere mollitia ad debitis hic voluptatem repellat! Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Distinctio, placeat repellendus esse error velit eum deserunt quibusdam a
+        perspiciatis, ipsam qui voluptas reprehenderit. Corrupti non reiciendis, temporibus molestias explicabo excepturi!
+    </p>
+</div>
+
+
