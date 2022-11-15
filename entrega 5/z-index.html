@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div{
+            border: 1px solid black;
+            position: absolute;
+        }
+        .contenedor{
+            position: relative;
+            border: none;
+            width: 500px;
+            height: 520px;
+        }
+        .azul{
+            background-color: blue;
+            width: 400px;
+            height: 500px;
+            left: 40px;
+            z-index: 2;
+        }
+        .rojo{
+            background-color: red;
+            width: 400px;
+            height: 150px;
+            top: 40px;
+            left: 10px;
+            z-index: 6;
+        }
+        .verde{ 
+            background-color: green;
+            width: 200px;
+            height: 400px;
+            right: 25px;
+            z-index: 4;
+        }
+        .rosa{
+            background-color: pink;
+            width: 350px;
+            height: 150px;
+            top: 200px;
+            left: 25px ;
+            z-index: 5;
+        }
+       
+        .azulcl{
+            background-color: lightblue;
+            width: 200px;
+            height: 100px;
+            left: 30px;
+            bottom: 10px;
+        }
+        .amarillo{
+            background-color: yellow;
+            width: 100%;
+            height: 100px;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>z-index</h1>
+    <div class="contenedor">
+       <div class="rojo">BLOQUE 1</div>
+       <div class="azul">BLOQUE 2
+            <div class="rosa">Hijo 1 de bloque 2</div>
+            <div class="verde">Hijo 2 de bloque 2</div>
+            <div class="azulcl">Hijo 3 de bloque 2</div>
+       </div>
+       <div class="amarillo">BLOQUE 3</div> 
+    </div>
+</body>
+</html>

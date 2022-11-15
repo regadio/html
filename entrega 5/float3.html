@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio4</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+      
+      .padre div{
+            padding: 50px; /*El padding ya hace que nos podamos ahorrar el height*/
+            float: left;
+            width: 25%;
+            text-align: center;
+            
+        }
+        div:nth-child(1){
+            background-color: rgb(121, 125, 127);
+
+        }
+        div:nth-child(2){
+            background-color: rgb(144, 148, 151);
+
+        }
+        div:nth-child(3){
+            background-color: rgb(166, 172, 175);
+
+        }
+        div:nth-child(4){
+            background-color: rgb(215, 219, 221);
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="padre">
+        <div>Texto dentro de la caja</div>
+        <div>Texto dentro de la caja</div>
+        <div>Texto dentro de la caja</div>
+        <div>Texto dentro de la caja</div>
+    </div>
+
+</body>
+</html>

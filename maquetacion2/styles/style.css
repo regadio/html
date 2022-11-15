@@ -1,0 +1,89 @@
+@font-face {
+    font-family: corinthia;
+    src: url(../fonts/Corinthia/Corinthia-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: corinthia;
+
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    background: rgb(255,71,0);
+    background: linear-gradient( to bottom , rgba(255,71,0,1) 0%, rgba(255,116,0,1) 53%, rgba(255,180,92,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    width: 45px;
+}
+.total-nav{
+    display: flex;
+    align-items: center;
+
+}
+.total-nav li{
+    list-style: none;
+    
+}
+.total-nav li a{
+    text-decoration: none;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 25px;
+
+}
+.total-nav li a:hover{
+    background: linear-gradient( to bottom , rgba(255,71,0,1) 0%, rgba(255,116,0,1) 53%, rgba(255,180,92,1) 100%);
+
+}
+
+.imagen-prin img{
+    width: 100%;
+}
+.contenedor-princi{
+    margin: 30px 20px 20px 10px;
+    display: flex;
+}
+.texto{
+    margin-right: 18px;
+}
+
+#barra-lateral{
+background-color: green;
+width: 250px;
+display: flex;
+justify-content: center;
+border: 1px solid white;
+align-items: center;
+}
+.nav-secun{
+    flex-direction: column;
+    
+}
+.nav-secun li{
+    list-style: none;
+    margin: 10px;
+    width: 100%;
+    border: 1px solid red;
+
+}
+.nav-secun li a{
+    border: 1px solid red;
+    text-decoration: none;
+}
+.nav-secun li a:hover{
+    background-color: beige;
+    border: 1px solid white;
+}
+
+
+
