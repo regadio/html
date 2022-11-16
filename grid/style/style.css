@@ -8,6 +8,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -87,11 +89,34 @@ body {
 
 /* INICIO FOOTER */
 #footer {
+    padding-top: 15px;
     width: 100%;
     background-color: #1E3645;
     height: 160px;
     position: fixed;
     bottom: 0px;
+    display: grid;
+    grid-template-areas: "logo footer1 footer2 footer3";
+
+}
+.contenedor-footer1{
+    grid-area: footer1;
+}
+.contenedor-footer2{
+    grid-area: footer2;
+}
+.contenedor-footer3{
+    grid-area: footer3;
+}
+
+.contenedor-footer1 li a{
+    color: aliceblue;
+}
+.contenedor-footer2 li a{
+    color: aliceblue;
+}
+.contenedor-footer3 li a{
+    color: aliceblue;
 }
 
 
