@@ -34,7 +34,6 @@ body {
     grid-template-areas: "logo menus carrito";
     column-gap: 30px;
     align-items: center;
-
 }
 
 .logo {
@@ -77,7 +76,6 @@ body {
 
 .carrito {
     text-decoration: none;
-
 }
 
 
@@ -97,7 +95,6 @@ body {
     bottom: 0px;
     display: grid;
     grid-template-areas: "logo footer1 footer2 footer3";
-
 }
 .contenedor-footer1{
     grid-area: footer1;
