@@ -5,7 +5,7 @@ let z = document.getElementById("boton-absoluto");
 function register() {
 	x.style.left = "-400px";
 	y.style.left = "190px";
-	z.style.left = "188px";
+	z.style.left = "184px";
 }
 
 function login() {

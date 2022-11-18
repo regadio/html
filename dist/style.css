@@ -33,7 +33,7 @@ body {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	width: 340px;
+	width: 330px;
 	margin: 35px auto;
 }
 
@@ -63,7 +63,6 @@ body {
 
 
 .login-register {
-	border: 1px solid red;
 	position: absolute;
 	width: 280px;
 	transition: .5s;
@@ -72,12 +71,14 @@ body {
 	transform: translate(-50%, -50%);
 	/* margin-top: 80px; */
 }
-#register{
+
+#register {
 	/* margin-top: 120px; */
 	top: 60%;
 
 }
-#login{
+
+#login {
 	/* margin-top: 90px; */
 	top: 50%;
 }
@@ -95,26 +96,29 @@ body {
 
 }
 
-.input-texto::placeholder{
+.input-texto::placeholder {
 	color: azure;
 }
 
 .submit-boton {
 	width: 100px;
-	padding: 10px 30px;
+	padding: 8px 30px;
 	cursor: pointer;
-	display: block;
-	margin: auto;
+	display: flex;
+	margin:20px auto;
 	background-color: #6fa2ff;
 	border: 0;
-	outline: none;
 	border-radius: 30px;
 }
 
-/* .check-box{
-	margin: 30px 10px 30px 0;
-} */
+.check-box{
+	margin-top: 10px;
+}
 
+span{
+	color: azure;
+	margin-left: 5px;
+}
 #login {
 	left: 190px;
 }
