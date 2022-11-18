@@ -1,11 +1,11 @@
-var x = document.getElementById("login");
-var y = document.getElementById("register");
-var z = document.getElementById("btn");
+let x = document.getElementById("login");
+let y = document.getElementById("register");
+let z = document.getElementById("boton-absoluto");
 
 function register() {
-	x.style.left = "-200px";
+	x.style.left = "-400px";
 	y.style.left = "190px";
-	z.style.left = "110px";
+	z.style.left = "188px";
 }
 
 function login() {
