@@ -1,4 +1,4 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -15,29 +15,26 @@ body {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(#141e30, #243b55);}
+	background: linear-gradient(#141e30, #243b55);
+}
 
 .log-container {
 	position: relative;
 	width: 390px;
-	height: 450px;
+	height: 390px;
 	background: #fff;
 	margin: 6% auto;
 	overflow: hidden;
-	box-shadow: 0 15px 25px rgba(0,0,0,.6);
-	background: rgba(0,0,0,.5);
+	box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+	background: rgba(0, 0, 0, .5);
 }
 
 .botones-container {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	border: 2px solid red;
 	width: 340px;
 	margin: 35px auto;
-	
-	/* box-shadow: 0 0 20px 9px #ff61241f; */
-	
 }
 
 .botones {
@@ -50,7 +47,7 @@ body {
 	font-weight: bold;
 	font-size: 14px;
 	color: azure;
-	
+
 }
 
 #boton-absoluto {
@@ -66,15 +63,23 @@ body {
 
 
 .login-register {
-	border: 2px solid rgb(66, 190, 212);
+	border: 1px solid red;
 	position: absolute;
 	width: 280px;
-	top: 180px;
 	transition: .5s;
-	top: 50%;
+	/* top: 30%; */
 	left: 50%;
-	transform: translate(-50%,-50%);
-	margin-top: 2.125em;
+	transform: translate(-50%, -50%);
+	/* margin-top: 80px; */
+}
+#register{
+	/* margin-top: 120px; */
+	top: 60%;
+
+}
+#login{
+	/* margin-top: 90px; */
+	top: 50%;
 }
 
 .input-texto {
@@ -90,13 +95,17 @@ body {
 
 }
 
+.input-texto::placeholder{
+	color: azure;
+}
+
 .submit-boton {
 	width: 100px;
 	padding: 10px 30px;
 	cursor: pointer;
 	display: block;
 	margin: auto;
-	background: linear-gradient(to right, #ff105f, #ffad06);
+	background-color: #6fa2ff;
 	border: 0;
 	outline: none;
 	border-radius: 30px;
@@ -107,9 +116,9 @@ body {
 } */
 
 #login {
-	left:190px;
+	left: 190px;
 }
 
 #register {
-	left:-200px;
+	left: -200px;
 }
