@@ -137,6 +137,7 @@ body {
 }
 
 /* FIN FOOTER */
+/* FORM */
 .total{
     display: flex;
     justify-content: center;
@@ -178,3 +179,4 @@ button[type="submit"]{
 	background-color: #00268f63;
     cursor: pointer;
 }
+/* FIN FORM */
