@@ -10,6 +10,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    color: azure;
 }
 
 body {
@@ -86,35 +87,94 @@ body {
 /* FIN HEADER */
 
 /* INICIO FOOTER */
-#footer {
-    padding-top: 15px;
+ #footer {
+    padding-top: 10px;
     width: 100%;
     background-color: #1E3645;
     height: 160px;
     position: fixed;
     bottom: 0px;
-    display: grid;
-    grid-template-areas: "logo footer1 footer2 footer3";
-}
-.contenedor-footer1{
-    grid-area: footer1;
-}
-.contenedor-footer2{
-    grid-area: footer2;
-}
-.contenedor-footer3{
-    grid-area: footer3;
 }
 
-.contenedor-footer1 li a{
-    color: aliceblue;
-}
-.contenedor-footer2 li a{
-    color: aliceblue;
-}
-.contenedor-footer3 li a{
-    color: aliceblue;
+.grid {
+  display: grid;
+  grid-template-areas: "a b c d"
+                       "e f f d";
 }
 
+.grid__item:nth-child(1) {
+  grid-area: b;
+}
+
+.grid__item:nth-child(2) {
+  grid-area: c;
+}
+
+.grid__item:nth-child(3) {
+  grid-area: e;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.grid__item:nth-child(4) {
+  grid-area: a;
+}
+
+.grid__item:nth-child(5) {
+  grid-area: d;
+}
+
+.grid__item:nth-child(6) {
+  grid-area: f;
+  text-align: center;
+}
+.copy{
+    margin-top: 28px
+}
+.contenedor-footer li:first-child{
+    font-size: 28px;
+    font-weight: bold;
+}
 
 /* FIN FOOTER */
+.total{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.total-form{
+    padding-top: 10px;
+    border-radius: 3%;
+    width: 200px;
+    height: 210px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(68, 66, 66, 0.6);
+	background: rgba(56, 60, 65, 0.5);
+}
+input{
+    margin: 2px;
+    padding: 5px;
+    background: transparent;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+}
+input::placeholder{
+    color: azure;
+}
+
+.total-form p{
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+button[type="submit"]{
+    padding: 7px;
+    border-radius: 10%;
+    border: 0;
+    margin-top: 8px;
+	background-color: #00268f63;
+    cursor: pointer;
+}
